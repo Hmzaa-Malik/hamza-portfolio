@@ -1,67 +1,38 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f8f9fa;
-  color: #222;
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #f5f6f7; color: #222; }
+
+/* NAVBAR */
+nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 60px; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
+nav ul { display: flex; list-style: none; gap: 25px; }
+nav a { text-decoration: none; color: #000; font-weight: 500; }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
-  background: #fff;
-  position: sticky;
-  top: 0;
-  border-bottom: 1px solid #eee;
-}
+/* HERO */
+.hero { text-align: center; padding: 80px 20px; }
+.profile-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
+.hero h1 { font-size: 2.4rem; font-weight: 700; }
 
-.navbar ul { display: flex; list-style: none; gap: 20px; }
-.navbar a { text-decoration: none; color: #000; font-weight: 500; }
-
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: #ffffff;
-}
-
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
+/* BUTTONS */
 .btn, .btn-outline {
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
+  padding: 10px 20px; border-radius: 6px; margin: 10px;
+  display: inline-block; font-weight: 600; text-decoration: none;
 }
+.btn { background: #000; color: #fff; }
+.btn-outline { border: 2px solid #000; color: #000; }
 
-.btn { background: black; color: white; }
-.btn-outline { border: 2px solid black; color: black; }
-
+/* SECTIONS */
 .section {
-  padding: 60px 80px;
-  background: white;
-  margin: 50px auto;
-  max-width: 900px;
-  border-radius: 10px;
-  border: 1px solid #eee;
+  width: 85%; max-width: 900px; margin: 60px auto; padding: 40px;
+  background: #fff; border-radius: 10px; border: 1px solid #ddd;
+}
+.section h2 { margin-bottom: 20px; }
+
+/* SKILL GRID */
+.grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  color: white;
-}
+/* FOOTER */
+footer { text-align: center; padding: 20px; background: #111; color: #fff; }
