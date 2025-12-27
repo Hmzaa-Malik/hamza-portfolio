@@ -1,2 +1,6 @@
-// Smooth scroll if needed later or animations
-console.log("Portfolio Loaded Successfully");
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+  });
+});

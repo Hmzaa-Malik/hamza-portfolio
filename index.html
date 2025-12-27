@@ -1,99 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Hamza Khan | AI Engineer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Hamza Khan | AI Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">Hamza</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Research</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="resume-btn" onclick="window.open('./assets/resume.pdf')" >
-            Download Resume
-        </button>
-    </nav>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2>Hamza</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>I'm <span>Muhammad Hamza Khan</span></h1>
-            <h2>AI Engineer & Researcher</h2>
-            <p>I design and build intelligent systems — Machine Learning, Deep Learning, and Generative AI.</p>
-            <button onclick="window.open('./assets/resume.pdf')" class="hero-btn">Download CV</button>
-        </div>
-        <div class="hero-img">
-            <img src="./assets/profile.jpg" alt="Hamza">
-        </div>
-    </section>
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <img src="assets/profile.jpg" alt="Profile" class="profile-img" />
+    <h1>Muhammad Hamza Khan</h1>
+    <h3>AI Engineer & Researcher</h3>
+    <p>I design and build intelligent systems focused on Machine Learning, Deep Learning, and Generative AI.</p>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-        <h2 class="title">About Me</h2>
-        <p>
-            AI Engineer with 3+ years of experience in Machine Learning, Deep Learning, Signal Processing & Generative AI.
-            Built systems for TTS, multimodal learning, speech-based depression detection and production-grade ML pipelines.
-        </p>
-    </section>
+    <div class="hero-buttons">
+      <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+      <a href="https://github.com/Hmzaa-Malik" target="_blank" class="btn-outline">GitHub</a>
+      <a href="https://scholar.google.com/" target="_blank" class="btn-outline">Google Scholar</a>
+    </div>
+  </header>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section skills">
-        <h2 class="title">Technical Skills</h2>
-        <div class="skills-grid">
-            <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>Hugging Face</span>
-            <span>Machine Learning</span><span>Deep Learning</span><span>Signal Processing</span>
-            <span>Computer Vision</span><span>NLP</span><span>MATLAB</span><span>C/C++</span><span>Linux</span>
-        </div>
-    </section>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am an AI Engineer with 3+ years of experience in Artificial Intelligence, Machine Learning, Signal Processing,
+      and NLP. My work includes research and industry-grade development of Generative AI systems (TTS, multimodal learning, deep models, etc.).
+    </p>
+  </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-        <h2 class="title">Experience</h2>
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>Hugging Face</span>
+      <span>Deep Learning</span><span>Machine Learning</span><span>NLP</span><span>Signal Processing</span>
+      <span>Computer Vision</span><span>MATLAB</span><span>C/C++</span><span>Linux</span>
+    </div>
+  </section>
 
-        <div class="exp-item">
-            <h3>Researcher in AI — Maverick, Innovista (2025)</h3>
-            <p>Generative AI (TTS, T2I, T2V) using PyTorch & Transformers.</p>
-        </div>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>AI Researcher — Maverick, Innovista (2025)</strong><br />Generative AI systems (TTS, T2I, T2V).</li>
+      <li><strong>ML Engineer — Congo Rise InfoTech (2024–2025)</strong><br />ML pipelines & prediction models.</li>
+      <li><strong>Research Engineer — SIMPLE Lab, UET Taxila (2021–2024)</strong><br />Multimodal depression detection.</li>
+    </ul>
+  </section>
 
-        <div class="exp-item">
-            <h3>Machine Learning Engineer — Congo Rise InfoTech (2024–2025)</h3>
-            <p>ML pipelines, prediction systems & signal-based modeling.</p>
-        </div>
+  <!-- RESEARCH -->
+  <section id="research" class="section">
+    <h2>Research & Publications</h2>
+    <ul>
+      <li><a href="https://ieeexplore.ieee.org" target="_blank">Heart Sound Spectrograms for Depression Detection — ICET</a></li>
+      <li><a href="https://ieeexplore.ieee.org" target="_blank">DL-Based Depression Detection — IEEE EMBC 2025</a></li>
+      <li><a href="https://scholar.google.com" target="_blank">EEG Spectrogram Recognition for MDD</a></li>
+    </ul>
+  </section>
 
-        <div class="exp-item">
-            <h3>Research Engineer — SIMPLE Lab, UET Taxila (2021–2024)</h3>
-            <p>Multimodal depression detection using physiological signals.</p>
-        </div>
-    </section>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:hamzamalik3134@gmail.com">hamzamalik3134@gmail.com</a></p>
+  </section>
 
-    <!-- RESEARCH -->
-    <section id="projects" class="section">
-        <h2 class="title">Research & Publications</h2>
-
-        <ul class="list">
-            <li>Heart Sound Spectrograms for Depression Detection — ICET</li>
-            <li>DL-Based Depression Detection using Speech — IEEE EMBC 2025</li>
-            <li>EEG Spectrogram-Based Classification of MDD</li>
-        </ul>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-        <h2 class="title">Contact</h2>
-        <p>Email: <a href="mailto:hamzamalik3134@gmail.com">hamzamalik3134@gmail.com</a></p>
-        <p>GitHub: <a target="_blank" href="https://github.com/Hmzaa-Malik">github.com/Hmzaa-Malik</a></p>
-        <p>Google Scholar: <a target="_blank" href="https://scholar.google.com">Scholar Profile</a></p>
-    </section>
+  <footer>
+    <p>© 2025 Muhammad Hamza Khan — Portfolio</p>
+  </footer>
 
 </body>
 </html>

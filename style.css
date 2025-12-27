@@ -1,40 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
-* {margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
-body {background:#0c0c0c;color:white;scroll-behavior:smooth;}
-a{text-decoration:none;color:white;}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #222;
+}
 
 .navbar {
-  display:flex;justify-content:space-between;align-items:center;
-  padding:20px;position:fixed;width:100%;top:0;background:#111;
-  border-bottom:1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #eee;
 }
-.nav-links {display:flex;gap:20px;list-style:none;}
-.nav-links a:hover {color:#00eaff;}
-.logo {font-size:24px;font-weight:700;color:#00eaff;}
 
-.resume-btn {
-  padding:8px 14px;background:#00eaff;color:black;border:none;
-  font-weight:600;border-radius:4px;cursor:pointer;
+.navbar ul { display: flex; list-style: none; gap: 20px; }
+.navbar a { text-decoration: none; color: #000; font-weight: 500; }
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
 }
-.resume-btn:hover {background:white;}
 
-.hero {display:flex;align-items:center;justify-content:space-between;
-  padding:120px 8% 50px;}
-.hero-text{max-width:50%;}
-.hero h1{font-size:50px;font-weight:700;}
-.hero h1 span{color:#00eaff;}
-.hero h2{opacity:.7;margin:10px 0;}
-.hero p{opacity:.8;margin-bottom:20px;}
-.hero-btn{padding:10px 20px;background:#00eaff;border:none;color:black;
-  font-weight:700;border-radius:4px;cursor:pointer;}
-.hero-img img{width:350px;border-radius:8px;}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
 
-.section {padding:80px 8%;}
-.title{font-size:32px;margin-bottom:20px;color:#00eaff;}
-.skills-grid{display:flex;flex-wrap:wrap;gap:10px;}
-.skills-grid span{background:#111;padding:10px 15px;border-radius:4px;}
+.btn, .btn-outline {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
 
-.exp-item{margin-bottom:25px;}
-.list li{margin:8px 0;}
-.contact p{margin:8px 0;}
+.btn { background: black; color: white; }
+.btn-outline { border: 2px solid black; color: black; }
+
+.section {
+  padding: 60px 80px;
+  background: white;
+  margin: 50px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
