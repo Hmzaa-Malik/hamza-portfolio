@@ -1,0 +1,11 @@
+<svg width="350" height="120" viewBox="0 0 350 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="350" height="120" rx="18" fill="#0A0F1F"/>
+<text x="30" y="78" font-family="Poppins, sans-serif" font-size="64" font-weight="700" fill="#00F0FF">HK</text>
+<path d="M250 60c0 33-20 50-45 50s-45-17-45-50 20-50 45-50 45 17 45 50z" stroke="#00E5FF" stroke-width="3"/>
+<circle cx="205" cy="40" r="6" fill="#00E5FF"/>
+<circle cx="230" cy="60" r="6" fill="#00E5FF"/>
+<circle cx="205" cy="80" r="6" fill="#00E5FF"/>
+<line x1="205" y1="40" x2="230" y2="60" stroke="#00E5FF" stroke-width="2"/>
+<line x1="205" y1="80" x2="230" y2="60" stroke="#00E5FF" stroke-width="2"/>
+<text x="110" y="105" fill="#10E7FF" font-size="16" font-family="Poppins, sans-serif">AI ENGINEER</text>
+</svg>
