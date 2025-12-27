@@ -1,111 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Muhammad Hamza Khan | AI Engineer Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Hamza Khan | AI Engineer</title>
 
-<meta name="description"
-content="Muhammad Hamza Khan - AI Engineer Portfolio specializing in Machine Learning, Deep Learning, NLP, Computer Vision, and AI product development." />
-<meta name="keywords"
-content="AI Engineer, Machine Learning, Deep Learning, NLP, PyTorch, TensorFlow, Computer Vision, LLMs, Portfolio" />
+  <!-- SEO -->
+  <meta name="description"
+        content="Portfolio of Muhammad Hamza Khan, AI Engineer specializing in Machine Learning, Deep Learning, NLP, and Computer Vision." />
+  <meta name="keywords"
+        content="Muhammad Hamza Khan, AI Engineer, Machine Learning, Deep Learning, NLP, Computer Vision, AI Portfolio" />
 
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <!-- Icons (Unicons for Abdul-Wasay style icons) -->
+  <link rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">Hamza</a>
 
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list grid">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active-link">
+              <i class="uil uil-estate nav-link-icon"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+              <i class="uil uil-user nav-link-icon"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">
+              <i class="uil uil-brain nav-link-icon"></i> Skills
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">
+              <i class="uil uil-suitcase nav-link-icon"></i> Experience
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#research" class="nav-link">
+              <i class="uil uil-book-open nav-link-icon"></i> Research
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">
+              <i class="uil uil-message nav-link-icon"></i> Contact
+            </a>
+          </li>
+        </ul>
 
-<header class="header">
-  <a href="#" class="nav-logo">
-    <img src="./logo.svg" alt="HK Logo" style="height:40px;">
+        <i class="uil uil-times nav-close" id="nav-close"></i>
+      </div>
+
+      <div class="nav-btns">
+        <!-- Theme change button -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home-container container grid">
+        <div class="home-content grid">
+          <div class="home-social">
+            <a href="https://github.com/Hmzaa-Malik" target="_blank" class="home-social-icon">
+              <i class="uil uil-github-alt"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-hamza-529834151" target="_blank" class="home-social-icon">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=rogwkYsAAAAJ" target="_blank" class="home-social-icon">
+              <i class="uil uil-graduation-cap"></i>
+            </a>
+          </div>
+
+          <div class="home-img">
+            <!-- Blob style image same as Abdul Wasay -->
+            <svg class="home-blob" viewBox="0 0 200 200"
+                 xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0" mask-type="alpha">
+                <path d="M40,-65.7C51.9,-58.6,61.2,-51.2,68.9,-41.3C76.5,-31.4,82.4,-19.1,83.9,-6.1C85.4,6.9,82.5,20.6,76.3,33.2C70.2,45.8,60.9,57.3,49.2,64.8C37.5,72.3,23.4,75.8,8.7,74.9C-6,74,-21.2,68.7,-34.4,61.2C-47.7,53.7,-59,44,-66.1,32C-73.3,20.1,-76.3,6,-75.5,-8.2C-74.8,-22.4,-70.4,-36.7,-61.5,-48.2C-52.7,-59.7,-39.5,-68.4,-25.1,-74.2C-10.7,-80,5,-82.9,19.5,-79.8C34,-76.8,47.3,-67.8,40,-65.7Z"
+                      transform="translate(100 100)" />
+              </mask>
+              <g mask="url(#mask0)">
+                <path d="M40,-65.7C51.9,-58.6,61.2,-51.2,68.9,-41.3C76.5,-31.4,82.4,-19.1,83.9,-6.1C85.4,6.9,82.5,20.6,76.3,33.2C70.2,45.8,60.9,57.3,49.2,64.8C37.5,72.3,23.4,75.8,8.7,74.9C-6,74,-21.2,68.7,-34.4,61.2C-47.7,53.7,-59,44,-66.1,32C-73.3,20.1,-76.3,6,-75.5,-8.2C-74.8,-22.4,-70.4,-36.7,-61.5,-48.2C-52.7,-59.7,-39.5,-68.4,-25.1,-74.2C-10.7,-80,5,-82.9,19.5,-79.8C34,-76.8,47.3,-67.8,40,-65.7Z"
+                      transform="translate(100 100)" />
+                <image class="home-blob-img" x="35" y="20"
+                       href="assets/profile.jpg" />
+              </g>
+            </svg>
+          </div>
+
+          <div class="home-data">
+            <h1 class="home-data-title">Hi, I'm Muhammad Hamza Khan</h1>
+            <h3 class="home-data-subtitle">AI Engineer</h3>
+            <p class="home-data-description">
+              AI Engineer with 1+ years of experience in Machine Learning, Deep Learning,
+              NLP and Computer Vision, building intelligent systems and applied AI products.
+            </p>
+            <a href="assets/resume.pdf" download="Muhammad_Hamza_Khan_Resume"
+               class="button button-flex">
+              Download Resume
+              <i class="uil uil-download-alt button-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <span class="section-subtitle">Who I am</span>
+
+      <div class="about-container container grid">
+        <div class="about-container-img">
+          <img src="assets/profile.jpg" alt="Hamza" class="about-container-imgAlt" />
+        </div>
+
+        <div class="about-container-data">
+          <p class="about-container-data-description">
+            I am an AI Engineer focused on Machine Learning, Deep Learning, and
+            Generative AI. I work on building practical AI systems, including
+            voice cloning, Urdu TTS, and intelligent ML pipelines.
+          </p>
+
+          <div class="about-container-data-info">
+            <div>
+              <span class="about-container-data-info-title">1+ </span>
+              <span class="about-container-data-info-name">Years<br />Experience</span>
+            </div>
+            <div>
+              <span class="about-container-data-info-title">AI &amp; ML</span>
+              <span class="about-container-data-info-name">Applied<br />Projects</span>
+            </div>
+            <div>
+              <span class="about-container-data-info-title">2</span>
+              <span class="about-container-data-info-name">Research<br />Papers</span>
+            </div>
+          </div>
+
+          <div class="about-buttons">
+            <a href="#contact" class="button button-flex">
+              Contact Me
+              <i class="uil uil-message button-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <span class="section-subtitle">My technical stack</span>
+
+      <div class="skills-container container grid">
+        <!-- AI / ML -->
+        <div class="skills-content skills-open">
+          <div class="skills-container-header">
+            <i class="uil uil-brain skills-icon"></i>
+            <div>
+              <h1 class="skills-title">AI &amp; Machine Learning</h1>
+              <span class="skills-subtitle">Core AI engineering skills</span>
+            </div>
+            <i class="uil uil-angle-down skills-arrow"></i>
+          </div>
+
+          <div class="skills-list grid">
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">Python</h3>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-polymer"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">PyTorch</h3>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-experimental"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">TensorFlow</h3>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-sustainable"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">NLP / Transformers</h3>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-matlab"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">Computer Vision (OpenCV, YOLO)</h3>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-imagej"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools / Dev -->
+        <div class="skills-content skills-open">
+          <div class="skills-container-header">
+            <i class="uil uil-desktop skills-icon"></i>
+            <div>
+              <h1 class="skills-title">Tools &amp; Engineering</h1>
+              <span class="skills-subtitle">For real-world AI</span>
+            </div>
+            <i class="uil uil-angle-down skills-arrow"></i>
+          </div>
+
+          <div class="skills-list grid">
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">Linux</h3>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-office"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">Git &amp; GitHub</h3>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-coordinating"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">Docker (basic)</h3>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-lean"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==================== EXPERIENCE ====================-->
+    <section class="experience section" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <span class="section-subtitle">Professional & research</span>
+
+      <div class="experience-container container">
+        <div class="experience-tabs">
+          <div class="experience-tabs-button button-flex experience-active"
+               data-target="#work">
+            <i class="uil uil-suitcase experience-icon"></i> Work
+          </div>
+          <div class="experience-tabs-button button-flex"
+               data-target="#research">
+            <i class="uil uil-graduation-cap experience-icon"></i> Research
+          </div>
+        </div>
+
+        <div class="experience-sections">
+          <!-- Work timeline -->
+          <div class="experience-content experience-active" data-content id="work">
+            <div class="experience-data">
+              <div>
+                <h3 class="experience-title">AI / ML Engineer</h3>
+                <span class="experience-subtitle">Industry & Freelance</span>
+                <div class="experience-calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2024 – Present
+                </div>
+              </div>
+
+              <div>
+                <span class="experience-rounder"></span>
+                <span class="experience-line"></span>
+              </div>
+
+              <div></div>
+            </div>
+
+            <div class="experience-data">
+              <div></div>
+
+              <div>
+                <span class="experience-rounder"></span>
+                <span class="experience-line"></span>
+              </div>
+
+              <div>
+                <h3 class="experience-title">AI Projects & Products</h3>
+                <span class="experience-subtitle">Voice Cloning, Urdu TTS, LipsyncMaker AI</span>
+                <div class="experience-calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2023 – Present
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research timeline -->
+          <div class="experience-content" data-content id="research">
+            <div class="experience-data">
+              <div>
+                <h3 class="experience-title">AI Research</h3>
+                <span class="experience-subtitle">Depression / signal-based models</span>
+                <div class="experience-calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  Research Papers & Experiments
+                </div>
+              </div>
+
+              <div>
+                <span class="experience-rounder"></span>
+                <span class="experience-line"></span>
+              </div>
+
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PROJECTS (Articles section) ====================-->
+    <section class="articles section" id="research">
+      <h2 class="section-title">Projects & Research</h2>
+      <span class="section-subtitle">AI-focused work</span>
+
+      <div class="articles-container container grid">
+        <!-- Project 1 -->
+        <div class="articles-content">
+          <img src="assets/project-1.png"
+               alt="Urdu Voice Cloning Studio" class="articles-img" />
+          <h3 class="articles-title">Urdu Voice Cloning Studio</h3>
+          <p class="articles-description">
+            A custom Urdu voice cloning & TTS pipeline combining neural speech models,
+            preprocessing, and deployment-focused design for real-world usage.
+          </p>
+          <a href="https://github.com/Hmzaa-Malik"
+             target="_blank" class="button button-flex articles-button">
+            View on GitHub
+            <i class="uil uil-arrow-right button-icon"></i>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="articles-content">
+          <img src="assets/project-2.png"
+               alt="AI Heart Rate Detection" class="articles-img" />
+          <h3 class="articles-title">AI Heart Rate Detection with Wearables</h3>
+          <p class="articles-description">
+            Signal-processing and ML approach for heart-rate extraction using accelerometer data
+            for remote health monitoring applications.
+          </p>
+          <a href="https://github.com/Hmzaa-Malik"
+             target="_blank" class="button button-flex articles-button">
+            View Project
+            <i class="uil uil-arrow-right button-icon"></i>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="articles-content">
+          <img src="assets/project-3.png"
+               alt="LipsyncMaker AI" class="articles-img" />
+          <h3 class="articles-title">LipsyncMaker AI</h3>
+          <p class="articles-description">
+            An AI-driven lipsync & dubbing concept for generating synchronized voiceovers
+            and studio-like audio for videos.
+          </p>
+          <a href="https://github.com/Hmzaa-Malik"
+             target="_blank" class="button button-flex articles-button">
+            View Concept
+            <i class="uil uil-arrow-right button-icon"></i>
+          </a>
+        </div>
+
+        <!-- Research Paper 1 -->
+        <div class="articles-content">
+          <h3 class="articles-title">Research Paper 1</h3>
+          <p class="articles-description">
+            Deep learning based depression detection using speech features.
+          </p>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rogwkYsAAAAJ&citation_for_view=rogwkYsAAAAJ:9yKSN-GCB0IC"
+             target="_blank" class="button button-flex articles-button">
+            View on Google Scholar
+            <i class="uil uil-arrow-right button-icon"></i>
+          </a>
+        </div>
+
+        <!-- Research Paper 2 -->
+        <div class="articles-content">
+          <h3 class="articles-title">Research Paper 2</h3>
+          <p class="articles-description">
+            Depression detection using multimodal signals & deep learning approaches.
+          </p>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rogwkYsAAAAJ&citation_for_view=rogwkYsAAAAJ:u5HHmVD_uO8C"
+             target="_blank" class="button button-flex articles-button">
+            View on Google Scholar
+            <i class="uil uil-arrow-right button-icon"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact me</h2>
+      <span class="section-subtitle">Get in touch</span>
+
+      <div class="contact-container container grid">
+        <div class="contact-items">
+          <div class="contact-information">
+            <i class="uil uil-envelope contact-icon"></i>
+            <div>
+              <h3 class="contact-title">Email</h3>
+              <a href="mailto:hamzamalik3134@gmail.com"
+                 class="contact-subtitle">hamzamalik3134@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <form action="https://formsubmit.co/hamzamalik3134@gmail.com"
+              method="POST" class="contact-form grid">
+          <!-- FormSubmit hidden config -->
+          <input type="hidden" name="_subject" value="Portfolio Contact - Hamza" />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <div class="contact-inputs grid">
+            <div class="contact-content">
+              <label class="contact-label">Name</label>
+              <input type="text" name="name" class="contact-input" required />
+            </div>
+            <div class="contact-content">
+              <label class="contact-label">Email</label>
+              <input type="email" name="email" class="contact-input" required />
+            </div>
+          </div>
+
+          <div class="contact-content">
+            <label class="contact-label">Message</label>
+            <textarea name="message" rows="5" class="contact-input" required></textarea>
+          </div>
+
+          <div class="contact-button">
+            <button type="submit" class="button button-flex">
+              Send Message
+              <i class="uil uil-message button-icon"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer-bg">
+      <div class="footer-container container grid">
+        <div class="footer-texts">
+          <h1 class="footer-title">Hamza</h1>
+          <span class="footer-subtitle">AI Engineer</span>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#research" class="footer-link">Research</a></li>
+        </ul>
+
+        <div class="footer-socials">
+          <a href="https://github.com/Hmzaa-Malik" target="_blank"
+             class="footer-social"><i class="uil uil-github-alt"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-hamza-529834151" target="_blank"
+             class="footer-social"><i class="uil uil-linkedin-alt"></i></a>
+          <a href="https://scholar.google.com/citations?user=rogwkYsAAAAJ" target="_blank"
+             class="footer-social"><i class="uil uil-graduation-cap"></i></a>
+        </div>
+      </div>
+
+      <p class="footer-copy">&#169; 2025 Hamza. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup-icon"></i>
   </a>
-</header>
 
-
-
-<header>
-  <nav>
-    <h2 class="logo">Hamza<span> Khan</span></h2>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button id="theme-toggle"><i class="fa-solid fa-moon"></i></button></li>
-    </ul>
-  </nav>
-</header>
-
-<section id="home" class="hero">
-  <img src="assets/profile.jpg" class="hero-img" alt="Hamza">
-  <h1>👋 I'm <span>Muhammad Hamza Khan</span></h1>
-  <p>AI Engineer | Machine Learning | NLP | Deep Learning | Computer Vision</p>
-  
-  <div class="buttons">
-    <a href="assets/resume.pdf" download class="btn"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
-    <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact Me</a>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <h2 class="section-title">🚀 Featured AI Projects</h2>
-  <div class="project-grid">
-
-    <div class="project-card">
-      <img src="assets/project1.png" alt="">
-      <h3>Voice Cloning & Urdu TTS Model</h3>
-      <p>Built a custom Urdu TTS & Voice Cloning pipeline using PyTorch, RVC + MMS, and fine-tuned dataset.</p>
-      <a href="https://github.com/Hmzaa-Malik" target="_blank" class="project-btn">View Project</a>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/project2.png" alt="">
-      <h3>Computer Vision Smoke Detection</h3>
-      <p>Trained an object detection model using YOLOv8 to detect smoke & hazards from video streams.</p>
-      <a href="https://github.com/Hmzaa-Malik" target="_blank" class="project-btn">View Repository</a>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/project3.png" alt="">
-      <h3>LLM Chatbot for Customer Support</h3>
-      <p>Developed a domain-based chatbot with embeddings, retrieval pipeline & conversational memory.</p>
-      <a href="https://github.com/Hmzaa-Malik" target="_blank" class="project-btn">GitHub Code</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <h2 class="section-title">🧠 Technical Skills</h2>
-
-  <div class="skills-container">
-    <span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>NLP</span>
-    <span>Computer Vision</span><span>LLMs</span><span>RVC / TTS</span><span>FastAPI</span>
-    <span>OpenCV</span><span>Docker</span><span>Linux</span><span>Git/GitHub</span>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2 class="section-title">📩 Contact Me</h2>
-  <form action="https://formsubmit.co/hamzamalik3134@gmail.com" method="POST" class="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="your@email.com" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
-  </form>
-</section>
-
-<footer>
-  <p>© 2025 Muhammad Hamza Khan | AI Engineer</p>
-</footer>
-
-<script src="script.js"></script>
+  <!--==================== MAIN JS ====================-->
+  <script src="script.js"></script>
 </body>
 </html>
